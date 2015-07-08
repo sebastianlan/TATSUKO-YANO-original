@@ -1,0 +1,15 @@
+@CHARSET "utf8";
+
+/*表格里的排序设置input宽度*/
+.orderinput{
+	width:40px;
+}
+
+.marginbottom10{
+	margin-bottom:10px;
+}
+
+.required{
+	color:red;
+	margin-right:5px;
+}
