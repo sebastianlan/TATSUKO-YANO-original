@@ -34,7 +34,7 @@ class Home extends CI_Controller {
 		}
 		$data ['newslist'] = $newslist;
 		
-		// 研究资讯
+		// 资讯
 		$this->load->Model ( 'Infocate_model', 'ic', true );
 		$this->load->Model ( 'Info_model', 'i', true );
 		$infocate = $this->ic->getRecordLimit ( array ('isdel'=>0), 'listorder desc', 2, 0 )->result_array ();
@@ -58,7 +58,7 @@ class Home extends CI_Controller {
 		$data ['groupcate'] = $groupcate;
 		$grouplist = array ();
 		foreach ( $groupcate as $v ) {
-			// 每个分类获取4条新闻
+			// 每个分类获取4条记录
 			$tmp = array ();
 			$tmp ['catename'] = $v ['name'];
 			$tmp ['info'] = $this->g->getRecordLimit ( array (
@@ -492,7 +492,7 @@ class Home extends CI_Controller {
 	
 	
 	/**
-	 * 在线风险测试
+	 * Online Risk Test
 	 */
 	public function risk(){
 		$this->config->load('online',true);
@@ -572,7 +572,7 @@ class Home extends CI_Controller {
 	
 	
 	/**
-	 * 在线资产配置
+	 * Online Asset Allocation
 	 */
 	public function asset(){
 		$this->config->load('online',true);
@@ -654,7 +654,7 @@ class Home extends CI_Controller {
 	}
 	
 	/**
-	 * 在线理财师预约
+	 * Online Booking
 	 */
 	public function subscribe(){
 		$this->config->load('online',true);
