@@ -445,7 +445,7 @@ CREATE TABLE `tyo_product_earn` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `product_id` int(11) NOT NULL,
   `time` smallint(5) unsigned NOT NULL COMMENT '时间',
-  `money` varchar(50) NOT NULL COMMENT '资金描述，100-300万',
+  `money` varchar(50) NOT NULL COMMENT '资金描述',
   `earn` float(5,1) unsigned NOT NULL COMMENT '收益，x100',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='产品收益明细，多维度';
