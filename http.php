@@ -18,9 +18,9 @@ $uid = 'LKSDK003796';
 //短信接口密码 $passwd
 $passwd = 'sz@thzc96';
 //发送到的目标手机号码 $telphone
-$telphone = '18651948985';
+$telphone = '15502133302';
 //短信内容 $message
-$message = "您的娃娃是全校第一,恭喜您！".time()."【凌凯http】"; 
+$message = "尊敬的先生/女士，你家里着火了".time()."【TATSUKO YANO original】"; 
 
 $action=isset($_POST['action'])?$_POST['action']:'';
 
